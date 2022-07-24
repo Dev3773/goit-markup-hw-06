@@ -22,6 +22,7 @@
   --border-header-col: #ECECEC;
   --icon-color: #AFB1B8;
   --psevdo-color: #2196F3;
+  --border-form-color: #2196F3;
   /* --animation--*/
   --animac: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -246,7 +247,7 @@ img {
   border: 1px solid #000000;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../images/img-hero/hero-bg.jpg);
+   rgba(47, 48, 58, 0.4)), url(../images/img-hero/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -708,6 +709,7 @@ img {
 }
 
 .join {
+  display: block;
   margin-bottom: 20px;
 
   color: var(--main-text-cl);
@@ -721,7 +723,6 @@ img {
 
 .social-footer-list {
   display: flex;
-
 }
 
 .social-footer-item:not(:last-child) {
@@ -752,6 +753,78 @@ img {
   fill: currentColor;
 }
 
+.footer-form {
+  margin-left: auto;
+}
+
+.form-foot {
+  display: flex;
+  align-items: center;
+}
+
+.form-footer-email {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-right: auto;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  order: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--main-text-cl);
+  background-color: #2F303A;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  transition: var(--animac);
+}
+
+.form-footer-email:focus {
+  border-color: var(--border-form-color);
+}
+
+.form-footer-email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+
+  color: var(--main-text-cl);
+  background-color: var(--btn-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+  padding: 10px 29px;
+  transition: var(--animac);
+}
+
+.footer-send {
+  margin-left: 10px;
+}
+  
 /* --File Portfolio.html-- */
 
 /* --Filtr section-- */
