@@ -438,7 +438,7 @@ fill: var(--btn-color);
   transition: fill var(--animac);
 }
 
-.modal-form-textarea {
+.form-textarea-label {
   margin-bottom: 20px;
 }
 
@@ -461,9 +461,15 @@ fill: var(--btn-color);
   cursor: pointer;
 }
 
+.modal-form-textarea:hover,
+.modal-form-textarea:focus {
+  border: 1px solid var(--btn-color);
+}
+
 .modal-form-checkbox {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -483,11 +489,14 @@ fill: var(--btn-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: auto;
   margin-right: 7px;
   border-radius: 2px;
-  outline: 2px solid #212121;
+  outline: 2px solid var(--accent-cl);
   outline-offset: -2px;
   transition: var(--animac);
+  
 }
 
 .modal-checkbox-icon {
