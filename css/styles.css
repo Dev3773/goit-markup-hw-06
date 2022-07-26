@@ -415,11 +415,11 @@ img {
   fill: var(--btn-color);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form-input:hover + .modal-form-icon {
 fill: var(--btn-color);
 }
 
-.modal-form-input:hover +.modal-form-icon {
+.modal-form-input:focus +.modal-form-icon {
   fill: var(--btn-color);
 }
 
@@ -427,7 +427,7 @@ fill: var(--btn-color);
 .modal-form-input:focus {
   border: 1px solid var(--btn-color);
 }
- 
+
 .modal-form-icon {
   position: absolute;
   bottom: 11px;
@@ -454,8 +454,8 @@ fill: var(--btn-color);
 
   color: var(--accent-cl);
 
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.17px;
   letter-spacing: 0.01em;
   resize: none;
   cursor: pointer;
@@ -465,24 +465,12 @@ fill: var(--btn-color);
 .modal-form-textarea:focus {
   border: 1px solid var(--btn-color);
 }
-
+ 
 .modal-form-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.modal-form-checkbox:checked + .modal-checkbox-add 
-.modal-checkbox-icon {
-  opacity: 1;
-  fill: #ffffff;
-}
-
-.modal-form-checkbox:checked +.modal-checkbox-add {
-  background-color: var(--btn-color);
-  outline: var(--btn-color);
-  transition: var(--animac);
 }
 
 .modal-checkbox-add {
@@ -497,6 +485,17 @@ fill: var(--btn-color);
   outline-offset: -2px;
   transition: var(--animac);
   
+}
+
+.input-form-checkbox:checked + .modal-checkbox-add .modal-checkbox-icon {
+  opacity: 1;
+  fill: #ffffff;
+}
+
+.input-form-checkbox:checked + .modal-checkbox-add {
+  background-color: var(--btn-color);
+  outline: var(--btn-color);
+  transition: var(--animac);
 }
 
 .modal-checkbox-icon {
@@ -1111,10 +1110,10 @@ fill: var(--btn-color);
 
 .portfolio-desc {
   position: absolute;
-  padding: 64px 24px;
+  padding: 66px 24px;
   top: 0;
   left: 0;
-  transform: translateY(101%);
+  transform: translateY(100%); 
   transition: var(--animac);
 
   background-color: rgba(33, 150, 243, 0.9);
