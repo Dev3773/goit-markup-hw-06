@@ -81,6 +81,7 @@ img {
 }
 
 .section {
+
   /*outline: 1px solid green;*/
 
   padding-top: 94px;
@@ -120,7 +121,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
 }
 
 .logo-right {
@@ -146,7 +146,6 @@ img {
 
 .nav-link {
   position: relative;
-
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -167,12 +166,10 @@ img {
 
 .psevdo::after {
   content: '';
-
   display: block;
   width: 100%;
   height: 4px;
   position: absolute;
-
   left: 0;
   bottom: -1px;
   border-radius: 2px;
@@ -361,11 +358,14 @@ img {
   cursor: pointer;
 
   background-color: var(--main-color);
-
 }
 
 .close {
   fill: #000000;
+}
+
+.close:hover, .close:focus {
+  fill: var(--btn-color);
 }
 
 .modal-form-caption {
@@ -376,6 +376,7 @@ img {
 
   color: var(--accent-cl);
 
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
@@ -484,7 +485,6 @@ fill: var(--btn-color);
   outline: 2px solid var(--accent-cl);
   outline-offset: -2px;
   transition: var(--animac);
-  
 }
 
 .input-form-checkbox:checked + .modal-checkbox-add .modal-checkbox-icon {
@@ -549,8 +549,6 @@ fill: var(--btn-color);
   0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 
   rgba(0, 0, 0, 0.12);
 }
-
-
 
 /* --end window Hero--*/
 
@@ -692,8 +690,9 @@ fill: var(--btn-color);
 .team-item {
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-item:last-child {
@@ -933,9 +932,9 @@ fill: var(--btn-color);
 
   color: var(--icon-footer-cl);
   background-color: rgba(255, 255, 255, 10%);
-  transition: var(--animac);
 
   border-radius: 50%;
+  transition: var(--animac);
 }
 
 .social-footer-link:hover,
@@ -999,10 +998,11 @@ fill: var(--btn-color);
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   min-width: 200px;
   min-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
   border-radius: 4px;
@@ -1010,11 +1010,11 @@ fill: var(--btn-color);
   color: var(--main-text-cl);
   background-color: var(--btn-color);
 
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   cursor: pointer;
-  padding: 10px 29px;
   transition: var(--animac);
 }
 
